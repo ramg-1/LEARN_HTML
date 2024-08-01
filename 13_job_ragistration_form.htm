@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Job Registration Page
+  </title>
+</head>
+
+<body>
+  <h1 style="text-align: center;"> Job Registration form</h1>
+  <form action="/action_page.php">
+    <label> Firstname </label>
+    <input type="text" name="firstname"> <br> <br>
+    <label> Lastname: </label>
+    <input type="text" name="lastname"> <br> <br>
+    <label for="birthday">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate">
+    <br>
+    <br>
+    <label>
+      Course :
+    </label>
+    <select>
+      <option value="Course">Course</option>
+      <option value="BCA">BCA</option>
+      <option value="BBA">BBA</option>
+      <option value="B.Tech">B.Tech</option>
+      <option value="MBA">MBA</option>
+      <option value="MCA">MCA</option>
+      <option value="M.Tech">M.Tech</option>
+    </select>
+    <br>
+    <br>
+    <label>
+      Gender :
+    </label><br>
+    <input type="radio" name="Gender" value="male" /> Male <br>
+    <input type="radio" name="Gender" value="female" /> Female <br>
+    <input type="radio" name="Gender" value="other" /> Other
+    <br>
+    <br>
+    <label>
+      Preferred Locations:
+    </label>
+    <br>
+    <input type="checkbox" id="India">
+    <label for="India"> India</label><br>
+    <input type="checkbox" id="UK">
+    <label for="UK"> UK</label><br>
+    <input type="checkbox" id="USA">
+    <label for="USA"> USA</label><br>
+    <input type="checkbox" id="Germany">
+    <label for="Germany"> Germany</label><br>
+    <input type="checkbox" id="France">
+    <label for="France"> France</label><br><br>
+    <label>
+      Phone :
+    </label>
+    <input type="text" name="country code" value="+91" size="2">
+    <input type="number" name="phone" maxlength="10" size="10">
+    <br> <br>
+    Address:
+    <br>
+    <textarea value="address" rows="5" cols="25">
+</textarea>
+    <br> <br>
+    <label for="resume">Upload your resume:</label>
+    <input type="file" id="resume" name="resume"><br><br>
+    <br>
+    <label for="linkedin">Add your Linkedin url:</label>
+    <input type="url" id="linkedin" name="linkedin">
+    <br><br>
+    <label for="vol">Rate your English proficiency:</label>
+    <input type="range" id="vol" min="0" max="10">
+    <br><br>
+    <label for="email">
+      Email:
+    </label>
+    <input type="email" id="email" name="email" />
+    <br> <br>
+    <button type="submit"> Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+
+</html>
