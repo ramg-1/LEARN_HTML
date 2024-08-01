@@ -1,0 +1,171 @@
+<!--
+1.by the image tag we added image to our website and make them more visulize appearing
+2.hence image can  inhence look and feel of a website and they are very important of a website
+3.firstly we add img tag <img> and specify the source of location of a image by using src attribute eg.<img src="kdfd.pnj">
+4.we must specify the correct image extention at the end of a image eg. --.png ,--.jpg otherwise image wont display
+5.Which attribute is used to specify the location of an image in HTML?
+
+src
+
+href
+
+img
+
+alt
+
+6.eg.. -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>My Website</title>
+</head>
+
+<body>
+  <img src="https://log2base2.com/icon.png">
+</body>
+
+</html>
+
+<!-- 
+7..there are two main way to include image src 1.absolute path 2.relative path
+8.absolute path:it is complete path in image from the root file system
+9.it include the full url of the file system
+10..it include the full url such like that protocol domain-name file path eg https://example.com/images/images.jpg
+11.it is useful when image we want to display is hoisted to on a differaent domain and when you want to specifi exact path to the file
+12.eg search in google any image copy the file path and paste in src it will display the image from the that domain
+13.so if we want to display the hoidted or load image from differnt domain then we can use absolute path
+
+14..now relative path
+15.a relative path is a path that is relative to the location of the current html file
+16.we use relative path to load images from our own domain or our file directory but not from external domain
+17.in others word relative specifies the location of the image file realtive to the locaation of the html file
+18.there are three cases of relative path when using relative to specify the locaation of image file
+19.1)the image file present in the same directory as the html file
+   1a-if image file present in the same directory then just write the name of thaat image file browser will look to the same directory and display the same image
+20.2)the image file present in the sub directory relative to html file
+    2a)if image file present in the sub directory then firstly write the folder name along with image name
+21.3)the image file present in the parent directory relative to html file
+   3a)when html file present in sub folder and image file present in parent folder then from subfolder to parent folder we use notation ../(dot/) it will move one level of hirarcy and point to parent folder to show the image we can name the image after ../__.png
+   3ab)if same case html file is prsent in sub to sub folder then we will use ../../__.png
+22.by relative path we can access any file in the system like.pdf etc.
+23.What is the difference between absolute paths and relative paths in web development?
+
+Absolute paths are used to specify the location of the image file relative to the location of the HTML file, while relative paths are used to load files from external domains.
+
+Absolute paths always start with a forward slash, while relative paths do not.
+
+Relative paths are used to specify the location of the image file relative to the location of the HTML file, while absolute paths are used to load files from external domains.
+
+Absolute paths are always longer and more complex than relative paths.
+24.Which of the following is the correct way to include the "image.png" file in the "index.html" file?
+
+<img src="image.png">
+
+<img src="../image.png">
+
+<img src="../../image.png">
+
+<img src="../../../image.png">
+
+25.image tag is use to display on the webpage but what happen when image is not present on the relative folder and image url is incorrect by happenting this thing html file will not display any image or will empty file which wil decrese the user experience(suppose a user is reading content and they are seeing empty fiel of image it will damage their feeling) to avoiding this it is prefered that to use alt attribut afete the image fiel so if the image is not present or url is wrogn then alt text will display descrtiption about that image so that user will be about to know about the image
+26.What does the "alt" attribute in an image tag in HTML provide?
+
+A title for the image
+
+An abbreviation for the image
+
+The alignment of the image
+
+An alternative text for the image
+27.Assuming that we have created the following img element in our HTML page:
+
+<img src="icon.png" alt="Icon Image">
+
+What happens if the specified image is not present on the server?
+
+The browser displays a broken image icon
+
+The browser displays the "alt" text 'Icon Image' along with a broken image icon
+
+The browser displays the text "image not found"
+
+The browser ignores the "alt" attribute and displays nothing
+28. -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>My Website</title>
+</head>
+
+<body>
+  <h1>Image Alt Text Examples</h1>
+
+  <h2>An incorrect image URL without alt text will display like this.</h2>
+  <img src="https://log2base2.com/cino.png">
+
+  <h2>An incorrect image URL with alt text will display like this.</h2>
+  <img src="https://log2base2.com/cino.png" alt="Icon image of the Log2Base2 logo.">
+</body>
+
+</html>
+
+<!-- 29.attribut:it is proveide additional informantion about elemetn(attribut generally come name="value")
+ 1.attribute provide additonal information to html element
+ 2.attributes are always specified in start tag
+ 3.attributes usuallu come in nama/value pair like:name="value"
+ 4.attribute can enhence the functionality and appearances of html element
+ 5.In HTML, attributes are used to?
+
+ define the structure of the page
+ 
+ style the content of the page
+ 
+ link to external resources
+ 
+ specify additional characteristics of HTML elements
+ 6.Which of the following statements is/are true about HTML attributes?
+
+ 1} Attributes provide additional information to HTML elements.
+ 
+ 2} Attributes are always specified in the start tag.
+ 
+ 3} Attributes usually come in name/value pairs like name="value".
+ 
+ 4} Attributes can enhance the functionality and appearance of HTML elements.
+ 
+ 1 and 3 only
+ 
+ 2 and 4 only
+ 
+ 1, 3, and 4 only
+ 
+ All of the above
+ 7.Which of the following attributes is used to change the width of the image?
+
+ size
+ 
+ w
+ 
+ width
+ 
+ length
+ 8. -->
+
+ <!DOCTYPE html>
+
+ <html>
+ 
+ <head>
+   <title>My Website</title>
+ </head>
+ 
+ <body>
+   <img src="https://log2base2.com/icon.png" height="500px" width="400px" alt="Icon image of the Log2Base2 logo.">
+ </body>
+   
+ </html>
